@@ -6,7 +6,8 @@
 
 <title>Rakesh Chauhan | Professional Portfolio</title>
 
-<meta name="description" content="The professional portfolio of Rakesh Chauhan.">
+<meta name="description"
+content="Rakesh Chauhan — professional portfolio in English and Gujarati.">
 
 <style>
 
@@ -34,7 +35,13 @@ html{
 }
 
 body{
-    font-family:Inter,"Segoe UI",Arial,sans-serif;
+    font-family:
+        Inter,
+        "Segoe UI",
+        Arial,
+        "Noto Sans Gujarati",
+        sans-serif;
+
     background:var(--light);
     color:var(--text);
     line-height:1.7;
@@ -56,28 +63,33 @@ nav{
     width:100%;
     z-index:1000;
 
-    background:rgba(6,21,37,.94);
+    background:rgba(6,21,37,.95);
+
     backdrop-filter:blur(20px);
 
-    border-bottom:1px solid rgba(255,255,255,.1);
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.1);
 }
 
 .nav-container{
     max-width:1250px;
     margin:auto;
 
-    padding:16px 25px;
+    padding:15px 25px;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
+
+    gap:20px;
 }
 
 .logo{
     color:white;
     font-size:18px;
     font-weight:850;
-    letter-spacing:.04em;
+    white-space:nowrap;
 }
 
 .logo span{
@@ -86,8 +98,10 @@ nav{
 
 .nav-links{
     display:flex;
-    gap:28px;
+    gap:25px;
+
     color:#d9e7f1;
+
     font-size:14px;
 }
 
@@ -99,19 +113,44 @@ nav{
     color:var(--cyan);
 }
 
-.nav-button{
-    padding:12px 20px;
+/* LANGUAGE SWITCHER */
+
+.language-switcher{
+    display:flex;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
     border-radius:30px;
 
-    background:
-        linear-gradient(
-            135deg,
-            var(--cyan),
-            #147bc2
-        );
+    padding:3px;
 
+    background:
+        rgba(255,255,255,.06);
+}
+
+.lang-btn{
+    border:none;
+
+    background:transparent;
+
+    color:#cbdce7;
+
+    padding:7px 12px;
+
+    border-radius:22px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    font-size:12px;
+}
+
+.lang-btn.active{
+    background:var(--cyan);
     color:white;
-    font-weight:800;
 }
 
 /* =========================
@@ -121,7 +160,9 @@ nav{
 .hero{
     min-height:100vh;
 
-    padding:150px 25px 90px;
+    padding:
+        150px 25px
+        90px;
 
     display:flex;
     align-items:center;
@@ -137,11 +178,13 @@ nav{
             rgba(41,196,223,.28),
             transparent 30%
         ),
+
         radial-gradient(
             circle at 20% 80%,
             rgba(8,120,181,.2),
             transparent 35%
         ),
+
         linear-gradient(
             135deg,
             #03101e,
@@ -161,7 +204,9 @@ nav{
     right:-250px;
     bottom:-300px;
 
-    border:1px solid rgba(255,255,255,.1);
+    border:
+        1px solid
+        rgba(255,255,255,.1);
 
     border-radius:50%;
 }
@@ -260,12 +305,14 @@ nav{
 
     border-radius:30px;
 
-    border:1px solid rgba(255,255,255,.35);
+    border:
+        1px solid
+        rgba(255,255,255,.35);
 
     color:white;
 }
 
-/* PHOTO CARD */
+/* PHOTO */
 
 .hero-photo-card{
     padding:18px;
@@ -312,21 +359,22 @@ nav{
 }
 
 .photo-caption{
-    padding:20px 8px 8px;
+    padding:
+        20px
+        8px
+        8px;
 }
 
 .photo-caption h2{
     font-size:28px;
-    color:white;
 }
 
 .photo-caption p{
     color:#c6dce8;
-    margin-top:3px;
 }
 
 /* =========================
-   GENERAL SECTIONS
+   SECTIONS
 ========================= */
 
 section{
@@ -384,7 +432,9 @@ section{
 .about-card{
     background:white;
 
-    border:1px solid var(--border);
+    border:
+        1px solid
+        var(--border);
 
     border-radius:28px;
 
@@ -420,7 +470,9 @@ section{
 .card{
     background:white;
 
-    border:1px solid var(--border);
+    border:
+        1px solid
+        var(--border);
 
     border-radius:25px;
 
@@ -488,7 +540,9 @@ section{
 
     background:white;
 
-    border:1px solid var(--border);
+    border:
+        1px solid
+        var(--border);
 
     border-radius:30px;
 
@@ -541,7 +595,9 @@ section{
 .experience-card{
     background:white;
 
-    border:1px solid var(--border);
+    border:
+        1px solid
+        var(--border);
 
     border-radius:28px;
 
@@ -571,7 +627,9 @@ section{
 
 .experience-location{
     color:var(--blue);
+
     font-weight:750;
+
     margin-bottom:15px;
 }
 
@@ -590,6 +648,10 @@ section{
 
 .international .section-heading p{
     color:#b8cad8;
+}
+
+.international .section-heading .eyebrow{
+    color:#82e9fa;
 }
 
 .international-grid{
@@ -706,6 +768,10 @@ section{
     color:white;
 }
 
+.focus .section-heading .eyebrow{
+    color:#82e9fa;
+}
+
 .focus .section-heading p{
     color:#bdd0dd;
 }
@@ -761,7 +827,9 @@ section{
 .contact-card{
     background:white;
 
-    border:1px solid var(--border);
+    border:
+        1px solid
+        var(--border);
 
     border-radius:28px;
 
@@ -828,13 +896,16 @@ footer{
    MOBILE
 ========================= */
 
-@media(max-width:900px){
+@media(max-width:1000px){
 
     .nav-links{
         display:none;
     }
 
-    .hero-container,
+    .hero-container{
+        grid-template-columns:1fr;
+    }
+
     .about-grid,
     .experience-list,
     .international-grid,
@@ -851,39 +922,47 @@ footer{
             repeat(2,1fr);
     }
 
-    section{
-        padding:75px 20px;
-    }
-
-    .hero{
-        padding-top:125px;
-    }
-
-    .rakesh-photo{
-        height:450px;
-    }
 }
 
-@media(max-width:550px){
+@media(max-width:600px){
 
     .nav-button{
         display:none;
+    }
+
+    .nav-container{
+        padding:13px 16px;
+    }
+
+    .logo{
+        font-size:15px;
+    }
+
+    .language-switcher{
+        margin-left:auto;
+    }
+
+    .hero{
+        padding:
+            125px
+            20px
+            75px;
     }
 
     .hero h1{
         font-size:49px;
     }
 
-    .focus-grid{
-        grid-template-columns:1fr;
-    }
-
     .rakesh-photo{
         height:390px;
     }
 
-    .hero-photo-card{
-        padding:12px;
+    section{
+        padding:75px 20px;
+    }
+
+    .focus-grid{
+        grid-template-columns:1fr;
     }
 
 }
@@ -903,29 +982,59 @@ footer{
 
 <div class="nav-container">
 
+
 <a href="#home" class="logo">
 Rakesh <span>Chauhan</span>
 </a>
 
+
 <div class="nav-links">
 
-<a href="#about">About</a>
+<a href="#about" data-en="About" data-gu="મારા વિશે">
+About
+</a>
 
-<a href="#education">Education</a>
+<a href="#education" data-en="Education" data-gu="શિક્ષણ">
+Education
+</a>
 
-<a href="#experience">Experience</a>
+<a href="#experience" data-en="Experience" data-gu="અનુભવ">
+Experience
+</a>
 
-<a href="#international">Journey</a>
+<a href="#international" data-en="Journey" data-gu="સફર">
+Journey
+</a>
 
-<a href="#family">Family</a>
+<a href="#family" data-en="Family" data-gu="પરિવાર">
+Family
+</a>
 
-<a href="#contact">Contact</a>
+<a href="#contact" data-en="Contact" data-gu="સંપર્ક">
+Contact
+</a>
 
 </div>
 
-<a href="#contact" class="nav-button">
-Contact
-</a>
+
+<div class="language-switcher">
+
+<button
+class="lang-btn active"
+id="englishBtn"
+onclick="setLanguage('en')">
+EN
+</button>
+
+<button
+class="lang-btn"
+id="gujaratiBtn"
+onclick="setLanguage('gu')">
+ગુજરાતી
+</button>
+
+</div>
+
 
 </div>
 
@@ -943,16 +1052,26 @@ Contact
 
 <div>
 
-<div class="eyebrow">
+<div
+class="eyebrow"
+data-en="Professional Portfolio"
+data-gu="વ્યાવસાયિક પોર્ટફોલિયો">
+
 Professional Portfolio
+
 </div>
+
 
 <h1>
 Rakesh<br>
 Chauhan
 </h1>
 
-<p class="hero-description">
+
+<p
+class="hero-description"
+data-en="A professional portfolio highlighting experience, education, international exposure and a journey connected to the pharmaceutical industry across India and the United States."
+data-gu="ભારત અને યુનાઇટેડ સ્ટેટ્સમાં ફાર્માસ્યુટિકલ ઉદ્યોગ સાથે જોડાયેલ અનુભવ, શિક્ષણ, આંતરરાષ્ટ્રીય અનુભવ અને વ્યાવસાયિક સફરને રજૂ કરતું પોર્ટફોલિયો.">
 
 A professional portfolio highlighting
 experience, education, international
@@ -962,19 +1081,25 @@ India and the United States.
 
 </p>
 
+
 <div class="hero-buttons">
 
 <a
 href="#about"
-class="primary-button">
+class="primary-button"
+data-en="Explore My Story"
+data-gu="મારી સફર જુઓ">
 
 Explore My Story
 
 </a>
 
+
 <a
 href="#contact"
-class="secondary-button">
+class="secondary-button"
+data-en="Get In Touch"
+data-gu="સંપર્ક કરો">
 
 Get In Touch
 
@@ -1001,8 +1126,12 @@ class="rakesh-photo"
 Rakesh Chauhan
 </h2>
 
-<p>
+<p
+data-en="Professional Portfolio"
+data-gu="વ્યાવસાયિક પોર્ટફોલિયો">
+
 Professional Portfolio
+
 </p>
 
 </div>
@@ -1016,28 +1145,44 @@ Professional Portfolio
 
 
 <!-- =========================
-     ABOUT ME
+     ABOUT
 ========================= -->
 
 <section id="about">
 
 <div class="container">
 
+
 <div class="section-heading">
 
-<div class="eyebrow">
+<div
+class="eyebrow"
+data-en="About Me"
+data-gu="મારા વિશે">
+
 About Me
+
 </div>
 
-<h2>
+
+<h2
+data-en="A journey shaped by experience and connection."
+data-gu="અનુભવ અને જોડાણથી ઘડાયેલી સફર.">
+
 A journey shaped by
 experience and connection.
+
 </h2>
 
-<p>
+
+<p
+data-en="A personal and professional profile built around experience, education, family and an international outlook."
+data-gu="અનુભવ, શિક્ષણ, પરિવાર અને આંતરરાષ્ટ્રીય દૃષ્ટિકોણ પર આધારિત વ્યક્તિગત અને વ્યાવસાયિક પ્રોફાઇલ.">
+
 A personal and professional profile
 built around experience, education,
 family and an international outlook.
+
 </p>
 
 </div>
@@ -1048,11 +1193,18 @@ family and an international outlook.
 
 <div class="about-card">
 
-<h3>
+<h3
+data-en="My Story"
+data-gu="મારી વાર્તા">
+
 My Story
+
 </h3>
 
-<p>
+
+<p
+data-en="I’m Rakesh Chauhan, a professional with experience connected to the pharmaceutical industry and an international perspective shaped by professional travel between India and the United States."
+data-gu="હું રાકેશ ચૌહાણ છું. મને ફાર્માસ્યુટિકલ ઉદ્યોગ સાથે જોડાયેલો અનુભવ છે અને ભારત તથા યુનાઇટેડ સ્ટેટ્સ વચ્ચેની વ્યાવસાયિક મુસાફરીથી આંતરરાષ્ટ્રીય દૃષ્ટિકોણ મળ્યો છે.">
 
 I’m Rakesh Chauhan, a professional
 with experience connected to the
@@ -1063,7 +1215,11 @@ and the United States.
 
 </p>
 
-<p style="margin-top:15px">
+
+<p
+style="margin-top:15px"
+data-en="My journey includes education in Surat, Gujarat, professional experience in Ankleshwar, and continued exposure to professional opportunities across countries."
+data-gu="મારી સફરમાં સુરત, ગુજરાતમાં શિક્ષણ, અંકલેશ્વરમાં વ્યાવસાયિક અનુભવ અને વિવિધ દેશોમાં વ્યાવસાયિક તકોનો અનુભવ સામેલ છે.">
 
 My journey includes education in
 Surat, Gujarat, professional
@@ -1078,11 +1234,18 @@ opportunities across countries.
 
 <div class="about-card">
 
-<h3>
+<h3
+data-en="What Drives Me"
+data-gu="મને શું પ્રેરણા આપે છે">
+
 What Drives Me
+
 </h3>
 
-<p>
+
+<p
+data-en="I value professionalism, continuous growth, meaningful relationships and the ability to learn from different experiences and cultures."
+data-gu="હું વ્યવસાયિકતા, સતત વિકાસ, અર્થપૂર્ણ સંબંધો અને વિવિધ અનુભવો તથા સંસ્કૃતિઓમાંથી શીખવાની ક્ષમતાને મહત્વ આપું છું.">
 
 I value professionalism, continuous
 growth, meaningful relationships
@@ -1091,7 +1254,11 @@ different experiences and cultures.
 
 </p>
 
-<p style="margin-top:15px">
+
+<p
+style="margin-top:15px"
+data-en="My professional journey continues to be influenced by the people, communities and opportunities I have encountered along the way."
+data-gu="મારી વ્યાવસાયિક સફર દરમિયાન મળેલા લોકો, સમુદાયો અને તકોથી મારી સફર સતત પ્રભાવિત થતી રહી છે.">
 
 My professional journey continues
 to be influenced by the people,
@@ -1118,15 +1285,26 @@ have encountered along the way.
 
 <div class="container">
 
+
 <div class="section-heading">
 
-<div class="eyebrow">
+<div
+class="eyebrow"
+data-en="Personal Values"
+data-gu="વ્યક્તિગત મૂલ્યો">
+
 Personal Values
+
 </div>
 
-<h2>
+
+<h2
+data-en="Principles that guide my journey."
+data-gu="મારી સફરને માર્ગદર્શન આપતા સિદ્ધાંતો.">
+
 Principles that guide
 my journey.
+
 </h2>
 
 </div>
@@ -1141,14 +1319,22 @@ my journey.
 01
 </div>
 
-<h3>
+<h3
+data-en="Professionalism"
+data-gu="વ્યાવસાયિકતા">
+
 Professionalism
+
 </h3>
 
-<p>
+<p
+data-en="Approaching professional relationships and opportunities with responsibility and respect."
+data-gu="વ્યાવસાયિક સંબંધો અને તકોને જવાબદારી અને સન્માન સાથે સ્વીકારવું.">
+
 Approaching professional
 relationships and opportunities
 with responsibility and respect.
+
 </p>
 
 </div>
@@ -1160,13 +1346,21 @@ with responsibility and respect.
 02
 </div>
 
-<h3>
+<h3
+data-en="Growth"
+data-gu="વિકાસ">
+
 Growth
+
 </h3>
 
-<p>
+<p
+data-en="Continuing to learn, adapt and grow through new experiences."
+data-gu="નવા અનુભવો દ્વારા સતત શીખવું, અનુકૂલન કરવું અને વિકાસ કરવો.">
+
 Continuing to learn, adapt and
 grow through new experiences.
+
 </p>
 
 </div>
@@ -1178,14 +1372,22 @@ grow through new experiences.
 03
 </div>
 
-<h3>
+<h3
+data-en="Connections"
+data-gu="જોડાણો">
+
 Connections
+
 </h3>
 
-<p>
+<p
+data-en="Building meaningful relationships across people, industries and cultures."
+data-gu="લોકો, ઉદ્યોગો અને સંસ્કૃતિઓ વચ્ચે અર્થપૂર્ણ સંબંધો બનાવવું.">
+
 Building meaningful relationships
 across people, industries and
 cultures.
+
 </p>
 
 </div>
@@ -1208,19 +1410,36 @@ id="education">
 
 <div class="container">
 
+
 <div class="section-heading">
 
-<div class="eyebrow">
+<div
+class="eyebrow"
+data-en="Education"
+data-gu="શિક્ષણ">
+
 Education
+
 </div>
 
-<h2>
-The foundation of my journey.
+
+<h2
+data-en="The foundation of my journey."
+data-gu="મારી સફરનો શૈક્ષણિક પાયો.">
+
+The foundation of
+my journey.
+
 </h2>
 
-<p>
+
+<p
+data-en="An academic experience in Gujarat, India."
+data-gu="ગુજરાત, ભારતમાં એક શૈક્ષણિક સફર.">
+
 An academic experience in
 Gujarat, India.
+
 </p>
 
 </div>
@@ -1230,18 +1449,25 @@ Gujarat, India.
 
 <div class="education-line"></div>
 
+
 <h3>
 Veer Narmad South Gujarat University
 </h3>
+
 
 <div class="location">
 Surat, Gujarat, India
 </div>
 
-<p>
+
+<p
+data-en="An important part of Rakesh Chauhan's educational journey and connection to Gujarat."
+data-gu="રાકેશ ચૌહાણની શૈક્ષણિક સફર અને ગુજરાત સાથેના જોડાણનો મહત્વપૂર્ણ ભાગ.">
+
 An important part of Rakesh Chauhan's
-educational journey and connection to
-Gujarat.
+educational journey and connection
+to Gujarat.
+
 </p>
 
 </div>
@@ -1259,22 +1485,38 @@ Gujarat.
 
 <div class="container">
 
+
 <div class="section-heading">
 
-<div class="eyebrow">
+<div
+class="eyebrow"
+data-en="Experience"
+data-gu="અનુભવ">
+
 Experience
+
 </div>
 
-<h2>
+
+<h2
+data-en="Professional experience with an international perspective."
+data-gu="આંતરરાષ્ટ્રીય દૃષ્ટિકોણ સાથેનો વ્યાવસાયિક અનુભવ.">
+
 Professional experience
 with an international perspective.
+
 </h2>
 
-<p>
+
+<p
+data-en="Experience spanning pharmaceutical industry exposure, professional travel and work connected to India and the United States."
+data-gu="ફાર્માસ્યુટિકલ ઉદ્યોગનો અનુભવ, વ્યાવસાયિક મુસાફરી અને ભારત તથા યુનાઇટેડ સ્ટેટ્સ સાથે જોડાયેલો અનુભવ.">
+
 Experience spanning pharmaceutical
 industry exposure, professional
 travel and work connected to India
 and the United States.
+
 </p>
 
 </div>
@@ -1283,48 +1525,167 @@ and the United States.
 <div class="experience-list">
 
 
+<!-- EXPERIENCE 1 -->
+
 <div class="experience-card">
 
-<div class="experience-number">
+<div
+class="experience-number"
+data-en="EXPERIENCE 01"
+data-gu="અનુભવ ૦૧">
+
 EXPERIENCE 01
+
 </div>
 
-<h3>
+
+<h3
+data-en="Pharmaceutical Industry"
+data-gu="ફાર્માસ્યુટિકલ ઉદ્યોગ">
+
 Pharmaceutical Industry
+
 </h3>
 
-<div class="experience-location">
+
+<div
+class="experience-location"
+data-en="India ↔ United States"
+data-gu="ભારત ↔ યુનાઇટેડ સ્ટેટ્સ">
+
 India ↔ United States
+
 </div>
 
-<p>
+
+<p
+data-en="Professional experience involving travel between India and the United States within the pharmaceutical industry."
+data-gu="ફાર્માસ્યુટિકલ ઉદ્યોગમાં ભારત અને યુનાઇટેડ સ્ટેટ્સ વચ્ચેની વ્યાવસાયિક મુસાફરી સાથે જોડાયેલો અનુભવ.">
+
 Professional experience involving
 travel between India and the
 United States within the
 pharmaceutical industry.
+
 </p>
 
 </div>
 
 
+<!-- EXPERIENCE 2 -->
+
 <div class="experience-card">
 
-<div class="experience-number">
+<div
+class="experience-number"
+data-en="EXPERIENCE 02"
+data-gu="અનુભવ ૦૨">
+
 EXPERIENCE 02
+
 </div>
+
 
 <h3>
 Gujarat Guardian
 </h3>
 
+
 <div class="experience-location">
 Ankleshwar, Gujarat, India
 </div>
 
-<p>
+
+<p
+data-en="Professional experience with Gujarat Guardian in Ankleshwar, Gujarat, India."
+data-gu="અંકલેશ્વર, ગુજરાત, ભારતમાં Gujarat Guardian સાથેનો વ્યાવસાયિક અનુભવ.">
+
 Professional experience with
 Gujarat Guardian in Ankleshwar,
 Gujarat, India.
+
+</p>
+
+</div>
+
+
+<!-- EXPERIENCE 3 -->
+
+<div class="experience-card">
+
+<div
+class="experience-number"
+data-en="EXPERIENCE 03"
+data-gu="અનુભવ ૦૩">
+
+EXPERIENCE 03
+
+</div>
+
+
+<h3>
+Vista Pharma
+</h3>
+
+
+<div
+class="experience-location"
+data-en="Professional Experience"
+data-gu="વ્યાવસાયિક અનુભવ">
+
+Professional Experience
+
+</div>
+
+
+<p
+data-en="Professional experience with Vista Pharma."
+data-gu="Vista Pharma સાથેનો વ્યાવસાયિક અનુભવ.">
+
+Professional experience with
+Vista Pharma.
+
+</p>
+
+</div>
+
+
+<!-- EXPERIENCE 4 -->
+
+<div class="experience-card">
+
+<div
+class="experience-number"
+data-en="EXPERIENCE 04"
+data-gu="અનુભવ ૦૪">
+
+EXPERIENCE 04
+
+</div>
+
+
+<h3>
+ABB Limited
+</h3>
+
+
+<div
+class="experience-location"
+data-en="Professional Experience"
+data-gu="વ્યાવસાયિક અનુભવ">
+
+Professional Experience
+
+</div>
+
+
+<p
+data-en="Professional experience with ABB Limited."
+data-gu="ABB Limited સાથેનો વ્યાવસાયિક અનુભવ.">
+
+Professional experience with
+ABB Limited.
+
 </p>
 
 </div>
@@ -1338,7 +1699,7 @@ Gujarat, India.
 
 
 <!-- =========================
-     INTERNATIONAL JOURNEY
+     INTERNATIONAL
 ========================= -->
 
 <section
@@ -1347,19 +1708,35 @@ id="international">
 
 <div class="container">
 
+
 <div class="section-heading">
 
-<div class="eyebrow">
+<div
+class="eyebrow"
+data-en="International Journey"
+data-gu="આંતરરાષ્ટ્રીય સફર">
+
 International Journey
+
 </div>
 
-<h2>
+
+<h2
+data-en="India ↔ United States"
+data-gu="ભારત ↔ યુનાઇટેડ સ્ટેટ્સ">
+
 India ↔ United States
+
 </h2>
 
-<p>
+
+<p
+data-en="Professional exposure across two countries and cultures."
+data-gu="બે દેશો અને સંસ્કૃતિઓમાં વ્યાવસાયિક અનુભવ.">
+
 Professional exposure across
 two countries and cultures.
+
 </p>
 
 </div>
@@ -1374,14 +1751,24 @@ two countries and cultures.
 🇮🇳
 </div>
 
-<h3>
+
+<h3
+data-en="India"
+data-gu="ભારત">
+
 India
+
 </h3>
 
-<p>
+
+<p
+data-en="Education and professional experience rooted in Gujarat, including Surat and Ankleshwar."
+data-gu="સુરત અને અંકલેશ્વર સહિત ગુજરાતમાં શિક્ષણ અને વ્યાવસાયિક અનુભવ.">
+
 Education and professional
 experience rooted in Gujarat,
 including Surat and Ankleshwar.
+
 </p>
 
 </div>
@@ -1393,15 +1780,25 @@ including Surat and Ankleshwar.
 🇺🇸
 </div>
 
-<h3>
+
+<h3
+data-en="United States"
+data-gu="યુનાઇટેડ સ્ટેટ્સ">
+
 United States
+
 </h3>
 
-<p>
+
+<p
+data-en="Professional travel and pharmaceutical industry experience involving the United States."
+data-gu="યુનાઇટેડ સ્ટેટ્સ સાથે જોડાયેલી વ્યાવસાયિક મુસાફરી અને ફાર્માસ્યુટિકલ ઉદ્યોગનો અનુભવ.">
+
 Professional travel and
 pharmaceutical industry
 experience involving the
 United States.
+
 </p>
 
 </div>
@@ -1422,15 +1819,26 @@ United States.
 
 <div class="container">
 
+
 <div class="section-heading">
 
-<div class="eyebrow">
+<div
+class="eyebrow"
+data-en="Professional Focus"
+data-gu="વ્યાવસાયિક ધ્યાન">
+
 Professional Focus
+
 </div>
 
-<h2>
+
+<h2
+data-en="Experience across industries and borders."
+data-gu="ઉદ્યોગો અને દેશોની સીમાઓ પારનો અનુભવ.">
+
 Experience across industries
 and borders.
+
 </h2>
 
 </div>
@@ -1441,13 +1849,21 @@ and borders.
 
 <div class="focus-item">
 
-<h3>
+<h3
+data-en="Pharmaceuticals"
+data-gu="ફાર્માસ્યુટિકલ્સ">
+
 Pharmaceuticals
+
 </h3>
 
-<p>
+<p
+data-en="Professional experience connected to the pharmaceutical industry."
+data-gu="ફાર્માસ્યુટિકલ ઉદ્યોગ સાથે જોડાયેલો વ્યાવસાયિક અનુભવ.">
+
 Professional experience connected
 to the pharmaceutical industry.
+
 </p>
 
 </div>
@@ -1455,13 +1871,21 @@ to the pharmaceutical industry.
 
 <div class="focus-item">
 
-<h3>
+<h3
+data-en="International"
+data-gu="આંતરરાષ્ટ્રીય">
+
 International
+
 </h3>
 
-<p>
+<p
+data-en="Experience involving India and the United States."
+data-gu="ભારત અને યુનાઇટેડ સ્ટેટ્સ સાથે જોડાયેલો અનુભવ.">
+
 Experience involving India and
 the United States.
+
 </p>
 
 </div>
@@ -1469,13 +1893,21 @@ the United States.
 
 <div class="focus-item">
 
-<h3>
+<h3
+data-en="Business"
+data-gu="વ્યવસાય">
+
 Business
+
 </h3>
 
-<p>
+<p
+data-en="Professional relationships and cross-border exposure."
+data-gu="વ્યાવસાયિક સંબંધો અને આંતરરાષ્ટ્રીય અનુભવ.">
+
 Professional relationships and
 cross-border exposure.
+
 </p>
 
 </div>
@@ -1483,13 +1915,21 @@ cross-border exposure.
 
 <div class="focus-item">
 
-<h3>
+<h3
+data-en="Growth"
+data-gu="વિકાસ">
+
 Growth
+
 </h3>
 
-<p>
+<p
+data-en="A continued commitment to personal and professional growth."
+data-gu="વ્યક્તિગત અને વ્યાવસાયિક વિકાસ માટે સતત પ્રતિબદ્ધતા.">
+
 A continued commitment to
 personal and professional growth.
+
 </p>
 
 </div>
@@ -1512,22 +1952,37 @@ id="family">
 
 <div class="container">
 
+
 <div class="family-box">
 
 <div class="family-icon">
 👨‍👩‍👧‍👦
 </div>
 
-<div class="eyebrow">
+
+<div
+class="eyebrow"
+data-en="Family"
+data-gu="પરિવાર">
+
 Family
+
 </div>
 
-<h2>
+
+<h2
+data-en="Family is an important part of my life."
+data-gu="પરિવાર મારા જીવનનો મહત્વપૂર્ણ ભાગ છે.">
+
 Family is an important
 part of my life.
+
 </h2>
 
-<p>
+
+<p
+data-en="I’m proud to be a father of two children. My family is an important source of motivation, inspiration and happiness throughout my personal and professional journey."
+data-gu="મને બે બાળકોના પિતા હોવાનો ગર્વ છે. મારો પરિવાર મારી વ્યક્તિગત અને વ્યાવસાયિક સફરમાં પ્રેરણા, ઉત્સાહ અને ખુશીનો મહત્વપૂર્ણ સ્ત્રોત છે.">
 
 I’m proud to be a father of two
 children. My family is an important
@@ -1554,20 +2009,36 @@ id="contact">
 
 <div class="container">
 
+
 <div class="section-heading">
 
-<div class="eyebrow">
+<div
+class="eyebrow"
+data-en="Contact"
+data-gu="સંપર્ક">
+
 Contact
+
 </div>
 
-<h2>
+
+<h2
+data-en="Let's connect."
+data-gu="ચાલો જોડાઈએ.">
+
 Let's connect.
+
 </h2>
 
-<p>
+
+<p
+data-en="For professional inquiries or to get in touch with Rakesh Chauhan, use the information below."
+data-gu="વ્યાવસાયિક પૂછપરછ માટે અથવા રાકેશ ચૌહાણનો સંપર્ક કરવા માટે નીચેની માહિતીનો ઉપયોગ કરો.">
+
 For professional inquiries or to
 get in touch with Rakesh Chauhan,
 use the information below.
+
 </p>
 
 </div>
@@ -1578,9 +2049,14 @@ use the information below.
 
 <div class="contact-card">
 
-<h3>
+<h3
+data-en="Contact Information"
+data-gu="સંપર્ક માહિતી">
+
 Contact Information
+
 </h3>
+
 
 <a
 href="tel:+18126869521"
@@ -1589,6 +2065,7 @@ class="contact-link">
 📞 (812) 686-9521
 
 </a>
+
 
 <a
 href="mailto:tirth_007@ymail.com"
@@ -1603,20 +2080,30 @@ class="contact-link">
 
 <div class="contact-card">
 
-<h3>
+<h3
+data-en="Professional Portfolio"
+data-gu="વ્યાવસાયિક પોર્ટફોલિયો">
+
 Professional Portfolio
+
 </h3>
 
-<p>
+
+<p
+data-en="Thank you for visiting Rakesh Chauhan's professional portfolio."
+data-gu="રાકેશ ચૌહાણના વ્યાવસાયિક પોર્ટફોલિયોની મુલાકાત લેવા બદલ આભાર.">
 
 Thank you for visiting Rakesh
 Chauhan's professional portfolio.
 
 </p>
 
+
 <a
 href="#home"
-class="primary-button">
+class="primary-button"
+data-en="Back To Top ↑"
+data-gu="ઉપર જાઓ ↑">
 
 Back To Top ↑
 
@@ -1648,19 +2135,100 @@ Rakesh Chauhan
 
 <br>
 
+<span
+data-en="Professional Portfolio"
+data-gu="વ્યાવસાયિક પોર્ટફોલિયો">
+
 Professional Portfolio
+
+</span>
 
 </div>
 
+
 <div>
-
 © 2026 Rakesh Chauhan
-
 </div>
 
 </div>
 
 </footer>
+
+
+<!-- =========================
+     LANGUAGE SCRIPT
+========================= -->
+
+<script>
+
+function setLanguage(language){
+
+    const elements =
+        document.querySelectorAll(
+            "[data-en][data-gu]"
+        );
+
+    elements.forEach(function(element){
+
+        if(language === "gu"){
+
+            element.textContent =
+                element.getAttribute("data-gu");
+
+        }else{
+
+            element.textContent =
+                element.getAttribute("data-en");
+
+        }
+
+    });
+
+
+    document.documentElement.lang =
+        language === "gu"
+        ? "gu"
+        : "en";
+
+
+    document.getElementById(
+        "englishBtn"
+    ).classList.toggle(
+        "active",
+        language === "en"
+    );
+
+
+    document.getElementById(
+        "gujaratiBtn"
+    ).classList.toggle(
+        "active",
+        language === "gu"
+    );
+
+
+    localStorage.setItem(
+        "rakeshLanguage",
+        language
+    );
+
+}
+
+
+/* Remember selected language */
+
+const savedLanguage =
+    localStorage.getItem(
+        "rakeshLanguage"
+    );
+
+if(savedLanguage){
+
+    setLanguage(savedLanguage);
+
+}
+
+</script>
 
 
 </body>

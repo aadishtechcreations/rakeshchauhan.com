@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rakesh Chauhan | Professional Portfolio</title>
+
+<meta name="description" content="The professional portfolio of Rakesh Chauhan.">
+
+<style>
+
+:root{
+    --navy:#061525;
+    --navy2:#0a2945;
+    --blue:#0878b5;
+    --cyan:#29c4df;
+    --gold:#c9a45d;
+    --white:#ffffff;
+    --light:#f5f9fc;
+    --text:#14263a;
+    --muted:#66788c;
+    --border:#dce7ef;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,"Segoe UI",Arial,sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.7;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background:rgba(6,21,37,.94);
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.nav-container{
+    max-width:1250px;
+    margin:auto;
+
+    padding:16px 25px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:white;
+    font-size:18px;
+    font-weight:850;
+    letter-spacing:.04em;
+}
+
+.logo span{
+    color:var(--cyan);
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+    color:#d9e7f1;
+    font-size:14px;
+}
+
+.nav-links a{
+    transition:.25s;
+}
+
+.nav-links a:hover{
+    color:var(--cyan);
+}
+
+.nav-button{
+    padding:12px 20px;
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--cyan),
+            #147bc2
+        );
+
+    color:white;
+    font-weight:800;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+
+    padding:150px 25px 90px;
+
+    display:flex;
+    align-items:center;
+
+    color:white;
+
+    position:relative;
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(41,196,223,.28),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(8,120,181,.2),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #03101e,
+            #082b49 55%,
+            #08738e
+        );
+}
+
+.hero::before{
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    right:-250px;
+    bottom:-300px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:50%;
+}
+
+.hero-container{
+    max-width:1250px;
+    width:100%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        1.1fr
+        .9fr;
+
+    gap:70px;
+
+    align-items:center;
+}
+
+.eyebrow{
+    color:#82e9fa;
+
+    text-transform:uppercase;
+
+    letter-spacing:.22em;
+
+    font-size:12px;
+
+    font-weight:850;
+
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:
+        clamp(
+            52px,
+            7vw,
+            92px
+        );
+
+    line-height:.95;
+
+    letter-spacing:-.055em;
+
+    margin-bottom:28px;
+}
+
+.hero-description{
+    max-width:700px;
+
+    font-size:19px;
+
+    color:#d4e6f2;
+}
+
+.hero-buttons{
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+}
+
+.primary-button{
+    display:inline-block;
+
+    padding:14px 23px;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--cyan),
+            #147bc2
+        );
+
+    color:white;
+
+    font-weight:800;
+
+    box-shadow:
+        0 15px 35px
+        rgba(20,130,190,.25);
+}
+
+.secondary-button{
+    display:inline-block;
+
+    padding:13px 21px;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,.35);
+
+    color:white;
+}
+
+/* PHOTO CARD */
+
+.hero-photo-card{
+    padding:18px;
+
+    border-radius:32px;
+
+    background:
+        rgba(255,255,255,.09);
+
+    border:
+        1px solid
+        rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.28);
+}
+
+.rakesh-photo{
+    width:100%;
+
+    height:500px;
+
+    display:block;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    border-radius:22px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    background:
+        linear-gradient(
+            135deg,
+            #123b58,
+            #0a789e
+        );
+}
+
+.photo-caption{
+    padding:20px 8px 8px;
+}
+
+.photo-caption h2{
+    font-size:28px;
+    color:white;
+}
+
+.photo-caption p{
+    color:#c6dce8;
+    margin-top:3px;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section{
+    padding:105px 25px;
+}
+
+.container{
+    max-width:1250px;
+    margin:auto;
+}
+
+.section-heading{
+    max-width:780px;
+    margin-bottom:50px;
+}
+
+.section-heading .eyebrow{
+    color:var(--blue);
+}
+
+.section-heading h2{
+    font-size:
+        clamp(
+            36px,
+            5vw,
+            60px
+        );
+
+    line-height:1.05;
+
+    letter-spacing:-.045em;
+
+    margin-bottom:18px;
+}
+
+.section-heading p{
+    color:var(--muted);
+    font-size:17px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid{
+    display:grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap:30px;
+}
+
+.about-card{
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:38px;
+
+    box-shadow:
+        0 18px 50px
+        rgba(20,60,90,.06);
+}
+
+.about-card h3{
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    color:var(--muted);
+}
+
+/* =========================
+   VALUES
+========================= */
+
+.cards{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:22px;
+}
+
+.card{
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:25px;
+
+    padding:32px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(20,60,90,.06);
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+
+    box-shadow:
+        0 25px 60px
+        rgba(20,60,90,.13);
+}
+
+.card-icon{
+    width:52px;
+    height:52px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:#e6f7fb;
+
+    color:#0874a8;
+
+    font-weight:900;
+
+    margin-bottom:22px;
+}
+
+.card h3{
+    font-size:21px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:var(--muted);
+    font-size:15px;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-section{
+    background:
+        linear-gradient(
+            135deg,
+            #eef8fc,
+            #ffffff
+        );
+}
+
+.education-card{
+    max-width:850px;
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    box-shadow:
+        0 20px 55px
+        rgba(20,60,90,.07);
+}
+
+.education-line{
+    width:55px;
+    height:4px;
+
+    background:var(--gold);
+
+    border-radius:10px;
+
+    margin-bottom:25px;
+}
+
+.education-card h3{
+    font-size:29px;
+    margin-bottom:8px;
+}
+
+.location{
+    color:var(--blue);
+    font-weight:750;
+}
+
+.education-card p{
+    color:var(--muted);
+    margin-top:15px;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-list{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:25px;
+}
+
+.experience-card{
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:35px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(20,60,90,.06);
+}
+
+.experience-number{
+    color:var(--cyan);
+
+    font-size:13px;
+
+    font-weight:900;
+
+    letter-spacing:.15em;
+
+    margin-bottom:12px;
+}
+
+.experience-card h3{
+    font-size:25px;
+    margin-bottom:6px;
+}
+
+.experience-location{
+    color:var(--blue);
+    font-weight:750;
+    margin-bottom:15px;
+}
+
+.experience-card p{
+    color:var(--muted);
+}
+
+/* =========================
+   INTERNATIONAL
+========================= */
+
+.international{
+    background:var(--navy);
+    color:white;
+}
+
+.international .section-heading p{
+    color:#b8cad8;
+}
+
+.international-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:25px;
+}
+
+.international-card{
+    padding:40px;
+
+    border-radius:30px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    border:
+        1px solid
+        rgba(255,255,255,.13);
+}
+
+.country{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.international-card h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.international-card p{
+    color:#c2d4df;
+}
+
+/* =========================
+   FAMILY
+========================= */
+
+.family-section{
+    background:white;
+}
+
+.family-box{
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:65px 40px;
+
+    border-radius:35px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f1faff,
+            #ffffff
+        );
+
+    border:
+        1px solid
+        var(--border);
+
+    box-shadow:
+        0 25px 65px
+        rgba(20,60,90,.07);
+}
+
+.family-icon{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.family-box h2{
+    font-size:
+        clamp(
+            35px,
+            5vw,
+            55px
+        );
+
+    line-height:1.05;
+
+    margin-bottom:20px;
+}
+
+.family-box p{
+    max-width:700px;
+
+    margin:auto;
+
+    color:var(--muted);
+
+    font-size:17px;
+}
+
+/* =========================
+   PROFESSIONAL FOCUS
+========================= */
+
+.focus{
+    background:
+        linear-gradient(
+            135deg,
+            #071b30,
+            #0a3a5c
+        );
+
+    color:white;
+}
+
+.focus .section-heading p{
+    color:#bdd0dd;
+}
+
+.focus-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:18px;
+}
+
+.focus-item{
+    padding:28px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.13);
+
+    border-radius:24px;
+
+    background:
+        rgba(255,255,255,.06);
+}
+
+.focus-item h3{
+    margin-bottom:8px;
+}
+
+.focus-item p{
+    color:#bdd0dd;
+    font-size:14px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    background:#f2f8fb;
+}
+
+.contact-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:25px;
+}
+
+.contact-card{
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:38px;
+}
+
+.contact-card h3{
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.contact-card p{
+    color:var(--muted);
+    margin-bottom:20px;
+}
+
+.contact-link{
+    display:block;
+
+    padding:17px 0;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    color:#075f96;
+
+    font-weight:800;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#03101d;
+
+    color:#9db2c5;
+
+    padding:40px 25px;
+}
+
+.footer-container{
+    max-width:1250px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.footer-container strong{
+    color:white;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero-container,
+    .about-grid,
+    .experience-list,
+    .international-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .focus-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    section{
+        padding:75px 20px;
+    }
+
+    .hero{
+        padding-top:125px;
+    }
+
+    .rakesh-photo{
+        height:450px;
+    }
+}
+
+@media(max-width:550px){
+
+    .nav-button{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:49px;
+    }
+
+    .focus-grid{
+        grid-template-columns:1fr;
+    }
+
+    .rakesh-photo{
+        height:390px;
+    }
+
+    .hero-photo-card{
+        padding:12px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+<div class="nav-container">
+
+<a href="#home" class="logo">
+Rakesh <span>Chauhan</span>
+</a>
+
+<div class="nav-links">
+
+<a href="#about">About</a>
+
+<a href="#education">Education</a>
+
+<a href="#experience">Experience</a>
+
+<a href="#international">Journey</a>
+
+<a href="#family">Family</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+<a href="#contact" class="nav-button">
+Contact
+</a>
+
+</div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero" id="home">
+
+<div class="hero-container">
+
+
+<div>
+
+<div class="eyebrow">
+Professional Portfolio
+</div>
+
+<h1>
+Rakesh<br>
+Chauhan
+</h1>
+
+<p class="hero-description">
+
+A professional portfolio highlighting
+experience, education, international
+exposure and a journey connected to
+the pharmaceutical industry across
+India and the United States.
+
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#about"
+class="primary-button">
+
+Explore My Story
+
+</a>
+
+<a
+href="#contact"
+class="secondary-button">
+
+Get In Touch
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PHOTO -->
+
+<div class="hero-photo-card">
+
+<img
+src="rakesh.jpg"
+alt="Rakesh Chauhan"
+class="rakesh-photo"
+>
+
+<div class="photo-caption">
+
+<h2>
+Rakesh Chauhan
+</h2>
+
+<p>
+Professional Portfolio
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     ABOUT ME
+========================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+About Me
+</div>
+
+<h2>
+A journey shaped by
+experience and connection.
+</h2>
+
+<p>
+A personal and professional profile
+built around experience, education,
+family and an international outlook.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+
+<div class="about-card">
+
+<h3>
+My Story
+</h3>
+
+<p>
+
+I’m Rakesh Chauhan, a professional
+with experience connected to the
+pharmaceutical industry and an
+international perspective shaped by
+professional travel between India
+and the United States.
+
+</p>
+
+<p style="margin-top:15px">
+
+My journey includes education in
+Surat, Gujarat, professional
+experience in Ankleshwar, and
+continued exposure to professional
+opportunities across countries.
+
+</p>
+
+</div>
+
+
+<div class="about-card">
+
+<h3>
+What Drives Me
+</h3>
+
+<p>
+
+I value professionalism, continuous
+growth, meaningful relationships
+and the ability to learn from
+different experiences and cultures.
+
+</p>
+
+<p style="margin-top:15px">
+
+My professional journey continues
+to be influenced by the people,
+communities and opportunities I
+have encountered along the way.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     VALUES
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+Personal Values
+</div>
+
+<h2>
+Principles that guide
+my journey.
+</h2>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="card-icon">
+01
+</div>
+
+<h3>
+Professionalism
+</h3>
+
+<p>
+Approaching professional
+relationships and opportunities
+with responsibility and respect.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+02
+</div>
+
+<h3>
+Growth
+</h3>
+
+<p>
+Continuing to learn, adapt and
+grow through new experiences.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">
+03
+</div>
+
+<h3>
+Connections
+</h3>
+
+<p>
+Building meaningful relationships
+across people, industries and
+cultures.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section
+class="education-section"
+id="education">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+Education
+</div>
+
+<h2>
+The foundation of my journey.
+</h2>
+
+<p>
+An academic experience in
+Gujarat, India.
+</p>
+
+</div>
+
+
+<div class="education-card">
+
+<div class="education-line"></div>
+
+<h3>
+Veer Narmad South Gujarat University
+</h3>
+
+<div class="location">
+Surat, Gujarat, India
+</div>
+
+<p>
+An important part of Rakesh Chauhan's
+educational journey and connection to
+Gujarat.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section id="experience">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+Experience
+</div>
+
+<h2>
+Professional experience
+with an international perspective.
+</h2>
+
+<p>
+Experience spanning pharmaceutical
+industry exposure, professional
+travel and work connected to India
+and the United States.
+</p>
+
+</div>
+
+
+<div class="experience-list">
+
+
+<div class="experience-card">
+
+<div class="experience-number">
+EXPERIENCE 01
+</div>
+
+<h3>
+Pharmaceutical Industry
+</h3>
+
+<div class="experience-location">
+India ↔ United States
+</div>
+
+<p>
+Professional experience involving
+travel between India and the
+United States within the
+pharmaceutical industry.
+</p>
+
+</div>
+
+
+<div class="experience-card">
+
+<div class="experience-number">
+EXPERIENCE 02
+</div>
+
+<h3>
+Gujarat Guardian
+</h3>
+
+<div class="experience-location">
+Ankleshwar, Gujarat, India
+</div>
+
+<p>
+Professional experience with
+Gujarat Guardian in Ankleshwar,
+Gujarat, India.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INTERNATIONAL JOURNEY
+========================= -->
+
+<section
+class="international"
+id="international">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+International Journey
+</div>
+
+<h2>
+India ↔ United States
+</h2>
+
+<p>
+Professional exposure across
+two countries and cultures.
+</p>
+
+</div>
+
+
+<div class="international-grid">
+
+
+<div class="international-card">
+
+<div class="country">
+🇮🇳
+</div>
+
+<h3>
+India
+</h3>
+
+<p>
+Education and professional
+experience rooted in Gujarat,
+including Surat and Ankleshwar.
+</p>
+
+</div>
+
+
+<div class="international-card">
+
+<div class="country">
+🇺🇸
+</div>
+
+<h3>
+United States
+</h3>
+
+<p>
+Professional travel and
+pharmaceutical industry
+experience involving the
+United States.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROFESSIONAL FOCUS
+========================= -->
+
+<section class="focus">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+Professional Focus
+</div>
+
+<h2>
+Experience across industries
+and borders.
+</h2>
+
+</div>
+
+
+<div class="focus-grid">
+
+
+<div class="focus-item">
+
+<h3>
+Pharmaceuticals
+</h3>
+
+<p>
+Professional experience connected
+to the pharmaceutical industry.
+</p>
+
+</div>
+
+
+<div class="focus-item">
+
+<h3>
+International
+</h3>
+
+<p>
+Experience involving India and
+the United States.
+</p>
+
+</div>
+
+
+<div class="focus-item">
+
+<h3>
+Business
+</h3>
+
+<p>
+Professional relationships and
+cross-border exposure.
+</p>
+
+</div>
+
+
+<div class="focus-item">
+
+<h3>
+Growth
+</h3>
+
+<p>
+A continued commitment to
+personal and professional growth.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FAMILY
+========================= -->
+
+<section
+class="family-section"
+id="family">
+
+<div class="container">
+
+<div class="family-box">
+
+<div class="family-icon">
+👨‍👩‍👧‍👦
+</div>
+
+<div class="eyebrow">
+Family
+</div>
+
+<h2>
+Family is an important
+part of my life.
+</h2>
+
+<p>
+
+I’m proud to be a father of two
+children. My family is an important
+source of motivation, inspiration
+and happiness throughout my
+personal and professional journey.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+class="contact"
+id="contact">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="eyebrow">
+Contact
+</div>
+
+<h2>
+Let's connect.
+</h2>
+
+<p>
+For professional inquiries or to
+get in touch with Rakesh Chauhan,
+use the information below.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<h3>
+Contact Information
+</h3>
+
+<a
+href="tel:+18126869521"
+class="contact-link">
+
+📞 (812) 686-9521
+
+</a>
+
+<a
+href="mailto:tirth_007@ymail.com"
+class="contact-link">
+
+✉ tirth_007@ymail.com
+
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>
+Professional Portfolio
+</h3>
+
+<p>
+
+Thank you for visiting Rakesh
+Chauhan's professional portfolio.
+
+</p>
+
+<a
+href="#home"
+class="primary-button">
+
+Back To Top ↑
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="footer-container">
+
+<div>
+
+<strong>
+Rakesh Chauhan
+</strong>
+
+<br>
+
+Professional Portfolio
+
+</div>
+
+<div>
+
+© 2026 Rakesh Chauhan
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
